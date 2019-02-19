@@ -1,0 +1,387 @@
+#myOtherInterestsContainer {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          top: 0%;
+          left: 0%;
+          background: rgb(24, 24, 24);
+          overflow: hidden;
+
+          #forestBackgroundDiv {
+                    position: absolute;
+                    height: 40%;
+                    width: 100%;
+                    top: 6%;
+                    background: url(src/assets/img/forest.gif);
+                    background-attachment: fixed;
+                    background-size: 120% 50%;
+                    background-position: 50% -10%;
+                    background-repeat: no-repeat;
+                    -webkit-filter: blur(1px);
+                    z-index: 0;
+          }
+
+          #forestBackgroundDivCover {
+                    position: absolute;
+                    height: 42%;
+                    width: 100%;
+                    top: 5%;
+                    background: linear-gradient(rgb(24, 24, 24), transparent, rgba(24, 24, 24, 0.5), rgba(24, 24, 24, 0.7), rgba(24, 24, 24, 0.8), rgba(24, 24, 24, 0.9), rgb(24, 24, 24));
+                    z-index: 1;
+          }
+
+          #myOtherInterestsDiv {
+                    position: absolute;
+                    height: 90%;
+                    width: 90%;
+                    top: 7%;
+                    left: 5%;
+                    z-index: 100;
+
+                    #myOtherInterestsMainHeading {
+                              position: absolute;
+                              width: 100%;
+                              top: -5%;
+                              text-align: center;
+                              font-size: 2rem;
+                    }
+
+                    #interestsDiv {
+                              position: absolute;
+                              height: 65%;
+                              width: 100%;
+                              top: 35%;
+                              left: 0%;
+
+                              #musicButton {
+                                        position: absolute;
+                                        height: 8%;
+                                        width: 20%;
+                                        top: 0%;
+                                        left: 0%;
+                                        text-align: center;
+                                        font-size: 1.2rem;
+                              }
+
+                              #softwareButton {
+                                        position: absolute;
+                                        height: 8%;
+                                        width: 20%;
+                                        top: 0%;
+                                        left: 20%;
+                                        text-align: center;
+                                        font-size: 1.2rem;
+                              }
+
+                              #videoButton {
+                                        position: absolute;
+                                        height: 8%;
+                                        width: 20%;
+                                        top: 0%;
+                                        left: 40%;
+                                        text-align: center;
+                                        font-size: 1.2rem;
+                              }
+
+                              #gamingButton {
+                                        position: absolute;
+                                        height: 8%;
+                                        width: 20%;
+                                        top: 0%;
+                                        left: 60%;
+                                        text-align: center;
+                                        font-size: 1.2rem;
+                              }
+
+                              #bartendingButton {
+                                        position: absolute;
+                                        height: 8%;
+                                        width: 20%;
+                                        top: 0%;
+                                        left: 80%;
+                                        text-align: center;
+                                        font-size: 1.2rem;
+                              }
+
+                                        #interestsButtonsUnderline {
+                                                  position: absolute;
+                                                  height: 0.05%;
+                                                  width: 20%;
+                                                  top: 8.7%;
+                                                  left: 0%;
+                                                  border: 0.5px solid teal;
+                                        }
+
+                                        #interestsButtonsUnderline.music {
+                                                  left: 0%;
+                                                  transition: 0.5s;
+                                        }
+
+                                        #interestsButtonsUnderline.software {
+                                                  left: 20%;
+                                                  transition: 0.5s;
+                                        }
+
+                                        #interestsButtonsUnderline.video {
+                                                  left: 40%;
+                                                  transition: 0.5s;
+                                        }
+
+                                        #interestsButtonsUnderline.gaming {
+                                                  left: 60%;
+                                                  transition: 0.5s;
+                                        }
+
+                                        #interestsButtonsUnderline.bartending {
+                                                  left: 80%;
+                                                  transition: 0.5s;
+                                        }
+
+                              #musicDiv {
+                                        position: absolute;
+                                        height: 90%;
+                                        width: 100%;
+                                        top: 10%;
+                                        left: 0%;
+
+                                        #musicPar {
+                                                  position: absolute;
+                                                  height: 80%;
+                                                  width: 88%;
+                                                  top: 0%;
+                                                  left: 0%;
+                                                  padding-left: 5%;
+                                                  padding-right: 5%;
+                                                  font-size: 1.05rem;
+                                        }
+                              }
+
+                              #musicDiv.music {
+                                        left: 0%;
+                                        transition: 0.5s;
+                              }
+
+                              #musicDiv.software {
+                                        left: -110%;
+                                        transition: 0.5s;
+                              }
+
+                              #musicDiv.video {
+                                        left: -110%;
+                                        transition: 0.5s;
+                              }
+
+                              #musicDiv.gaming {
+                                        left: -110%;
+                                        transition: 0.5s;
+                              }
+
+                              #musicDiv.bartending {
+                                        left: -110%;
+                                        transition: 0.5s;
+                              }
+
+                              #softwareDiv {
+                                        position: absolute;
+                                        height: 90%;
+                                        width: 100%;
+                                        top: 10%;
+                                        left: 0%;
+
+                                        #softwarePar {
+                                                  position: absolute;
+                                                  height: 80%;
+                                                  width: 88%;
+                                                  top: 0%;
+                                                  left: 0%;
+                                                  padding-left: 5%;
+                                                  padding-right: 5%;
+                                                  font-size: 1.08rem;
+                                                  overflow-y: scroll;
+                                        }
+                              }
+
+                              #softwareDiv.music {
+                                        left: 110%;
+                                        transition: 0.5s;
+                              }
+
+                              #softwareDiv.software {
+                                        left: 0%;
+                                        transition: 0.5s;
+                              }
+
+                              #softwareDiv.video {
+                                        left: -110%;
+                                        transition: 0.5s;
+                              }
+
+                              #softwareDiv.gaming {
+                                        left: -110%;
+                                        transition: 0.5s;
+                              }
+
+                              #softwareDiv.bartending {
+                                        left: -110%;
+                                        transition: 0.5s;
+                              }
+
+                              #videoDiv {
+                                        position: absolute;
+                                        height: 90%;
+                                        width: 100%;
+                                        top: 10%;
+                                        left: 0%;
+
+                                        #videoPar {
+                                                  position: absolute;
+                                                  height: 80%;
+                                                  width: 88%;
+                                                  top: 0%;
+                                                  left: 0%;
+                                                  padding-left: 5%;
+                                                  padding-right: 5%;
+                                                  font-size: 1.05rem;
+                                        }
+                              }
+
+                              #videoDiv.music {
+                                        left: 110%;
+                                        transition: 0.5s;
+                              }
+
+                              #videoDiv.software {
+                                        left: 110%;
+                                        transition: 0.5s;
+                              }
+
+                              #videoDiv.video {
+                                        left: 0%;
+                                        transition: 0.5s;
+                              }
+
+                              #videoDiv.gaming {
+                                        left: -110%;
+                                        transition: 0.5s;
+                              }
+
+                              #videoDiv.bartending {
+                                        left: -110%;
+                                        transition: 0.5s;
+                              }
+
+                              #gamingDiv {
+                                        position: absolute;
+                                        height: 90%;
+                                        width: 100%;
+                                        top: 10%;
+                                        left: 0%;
+
+                                        #gamingPar {
+                                                  position: absolute;
+                                                  height: 80%;
+                                                  width: 88%;
+                                                  top: 0%;
+                                                  left: 0%;
+                                                  padding-left: 5%;
+                                                  padding-right: 5%;
+                                                  font-size: 1.05rem;
+                                        }
+                              }
+
+                              #gamingDiv.music {
+                                        left: 110%;
+                                        transition: 0.5s;
+                              }
+
+                              #gamingDiv.software {
+                                        left: 110%;
+                                        transition: 0.5s;
+                              }
+
+                              #gamingDiv.video {
+                                        left: 110%;
+                                        transition: 0.5s;
+                              }
+
+                              #gamingDiv.gaming {
+                                        left: 0%;
+                                        transition: 0.5s;
+                              }
+
+                              #gamingDiv.bartending {
+                                        left: -110%;
+                                        transition: 0.5s;
+                              }
+
+                              #bartendingDiv {
+                                        position: absolute;
+                                        height: 90%;
+                                        width: 100%;
+                                        top: 10%;
+                                        left: 0%;
+
+                                        #bartendingPar {
+                                                  position: absolute;
+                                                  height: 80%;
+                                                  width: 88%;
+                                                  top: 0%;
+                                                  left: 0%;
+                                                  padding-left: 5%;
+                                                  padding-right: 5%;
+                                                  font-size: 1.05rem;
+                                        }
+                              }
+
+                              #bartendingDiv.music {
+                                        left: 110%;
+                                        transition: 0.5s;
+                              }
+
+                              #bartendingDiv.software {
+                                        left: 110%;
+                                        transition: 0.5s;
+                              }
+
+                              #bartendingDiv.video {
+                                        left: 110%;
+                                        transition: 0.5s;
+                              }
+
+                              #bartendingDiv.gaming {
+                                        left: 110%;
+                                        transition: 0.5s;
+                              }
+
+                              #bartendingDiv.bartending {
+                                        left: 0%;
+                                        transition: 0.5s;
+                              }
+
+                                        .seeMoreLinks {
+                                                  position: absolute;
+                                                  height: 12%;
+                                                  width: 40%;
+                                                  top: 86.5%;
+                                                  left: 58%;
+                                                  font-size: 1.6rem;
+                                                  color: teal;
+                                                  text-align: center;
+                                                  border: 1px solid teal;
+                                                  border-radius: 3px;
+                                        }
+                    }
+          }
+
+          #myOtherInterestsDiv.open {
+                    transform: rotateY(0deg);
+                    transition: 0.3s;
+                    transition-delay: 2.5s;
+          }
+
+          #myOtherInterestsDiv.closed {
+                    transform: rotateY(-90deg);
+                    transition: 0.3s;
+                    transition-delay: 0s;
+          }
+}

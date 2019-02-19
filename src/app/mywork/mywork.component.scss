@@ -1,0 +1,433 @@
+#myWorkContainer {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          top: 0%;
+          left: 0%;
+          background: rgb(24, 24, 24);
+          overflow: hidden;
+
+          #millBackgroundDiv {
+                    position: absolute;
+                    height: 40%;
+                    width: 100%;
+                    top: 6%;
+                    background: url(src/assets/img/mill.gif);
+                    background-attachment: fixed;
+                    background-size: 140% 60%;
+                    background-position: 30% -10%;
+                    background-repeat: no-repeat;
+                    -webkit-filter: blur(1px);
+                    z-index: 0;
+          }
+
+          #millBackgroundDivCover {
+                    position: absolute;
+                    height: 42%;
+                    width: 100%;
+                    top: 5%;
+                    background: linear-gradient(rgb(24, 24, 24), transparent, rgba(24, 24, 24, 0.5), rgba(24, 24, 24, 0.7), rgba(24, 24, 24, 0.8), rgba(24, 24, 24, 0.9), rgb(24, 24, 24));
+                    z-index: 1;
+          }
+
+          #myWorkDiv {
+                    position: absolute;
+                    height: 90%;
+                    width: 90%;
+                    top: 7%;
+                    left: 5%;
+                    z-index: 100;
+
+                    #myWorkMainHeading {
+                              position: absolute;
+                              width: 100%;
+                              top: -5%;
+                              text-align: center;
+                              font-size: 2rem;
+                    }
+
+                    #toCheckOutPar {
+                              position: absolute;
+                              width: 70%;
+                              top: 5%;
+                              left: 1%;
+                              font-size: 1.1rem;
+                              z-index: 100;
+                    }
+
+                    #toCheckOutBackground {
+                              position: absolute;
+                              height: 4%;
+                              width: 112%;
+                              top: 8.4%;
+                              left: -6%;
+                              background: rgba(0, 0, 0, 0.4);
+                    }
+
+                    #ldmDiv {
+                              position: absolute;
+                              height: 25%;
+                              width: 44.5%;
+                              top: 37.2%;
+                              left: 27.75%;
+                              z-index: 10;
+                              transform: rotate(45deg);
+
+                              #ldmHeading {
+                                        position: absolute;
+                                        width: 100%;
+                                        top: 40%;
+                                        left: -43%;
+                                        text-align: center;
+                                        transform: rotate(-90deg);
+                              }
+
+                                        #ldmImage {
+                                                  position: absolute;
+                                                  height: 300%;
+                                                  top: -48%;
+                                                  left: 19%;
+                                        }
+                    }
+
+                    #instafamousDiv {
+                              position: absolute;
+                              height: 25%;
+                              width: 44.5%;
+                              top: 50.2%;
+                              left: 4.4%;
+                              z-index: 10;
+                              transform: rotate(45deg);
+
+                              #instafamousHeading {
+                                        position: absolute;
+                                        width: 100%;
+                                        top: 84.5%;
+                                        left: 0%;
+                                        text-align: center;
+                              }
+
+                                        #instafamousImage {
+                                                  position: absolute;
+                                                  height: 300%;
+                                                  top: -45%;
+                                                  left: 15%;
+                                        }
+                    }
+
+                    #academyDiv {
+                              position: absolute;
+                              height: 25%;
+                              width: 44.5%;
+                              top: 50.2%;
+                              left: 50.8%;
+                              z-index: 10;
+                              transform: rotate(45deg);
+
+                              #academyHeading {
+                                        position: absolute;
+                                        width: 100%;
+                                        top: -2%;
+                                        left: 0%;
+                                        text-align: center;
+                              }
+
+                                        #academyImage {
+                                                  position: absolute;
+                                                  height: 380%;
+                                                  top: -66%;
+                                                  left: 50%;
+                                        }
+                    }
+
+                    #gameonDiv {
+                              position: absolute;
+                              height: 25%;
+                              width: 44.5%;
+                              top: 63.2%;
+                              left: 27.75%;
+                              z-index: 10;
+                              transform: rotate(45deg);
+
+                              #gameonHeading {
+                                        position: absolute;
+                                        width: 100%;
+                                        top: 40.5%;
+                                        left: 44%;
+                                        text-align: center;
+                                        transform: rotate(-90deg);
+                              }
+
+                                        #gameonImage {
+                                                  position: absolute;
+                                                  height: 500%;
+                                                  top: -150%;
+                                                  left: 30%;
+                                        }
+                    }
+
+                    .workImageContainers {
+                              position: absolute;
+                              height: 70%;
+                              width: 70%;
+                              top: 15%;
+                              left: 15%;
+                              border: 1px solid teal;
+                              border-radius: 5px;
+                              overflow: hidden;
+                              z-index: 110;
+                    }
+
+                              #ldmImageContainer.small {
+                                        position: absolute;
+                                        height: 70%;
+                                        width: 70%;
+                                        top: 15%;
+                                        left: 15%;
+                                        border: 1px solid teal;
+                                        border-radius: 5px;
+                                        overflow: hidden;
+                                        z-index: 10;
+                                        transition: 0.5s;
+                              }
+
+                              #ldmImageContainer.large {
+                                        position: absolute;
+                                        height: 390%;
+                                        width: 210%;
+                                        top: -145%;
+                                        left: -55%;
+                                        border: none;
+                                        box-shadow: 6px 6px 6px black;
+                                        border-radius: 0px;
+                                        transform: rotate(-45deg);
+                                        overflow: hidden;
+                                        z-index: 999;
+                                        transition: 0.5s;
+                              }
+
+                              #instafamousImageContainer.small {
+                                        position: absolute;
+                                        height: 70%;
+                                        width: 70%;
+                                        top: 15%;
+                                        left: 15%;
+                                        border: 1px solid teal;
+                                        border-radius: 5px;
+                                        overflow: hidden;
+                                        z-index: 10;
+                                        transition: 0.5s;
+                              }
+
+                              #instafamousImageContainer.large {
+                                        position: absolute;
+                                        height: 390%;
+                                        width: 210%;
+                                        top: -145%;
+                                        left: -55%;
+                                        border: none;
+                                        box-shadow: 6px 6px 6px black;
+                                        border-radius: 0px;
+                                        transform: rotate(-45deg);
+                                        overflow: hidden;
+                                        z-index: 999;
+                                        transition: 0.5s;
+                              }
+
+                              #academyImageContainer.small {
+                                        position: absolute;
+                                        height: 70%;
+                                        width: 70%;
+                                        top: 15%;
+                                        left: 15%;
+                                        border: 1px solid teal;
+                                        border-radius: 5px;
+                                        overflow: hidden;
+                                        z-index: 10;
+                                        transition: 0.5s;
+                              }
+
+                              #academyImageContainer.large {
+                                        position: absolute;
+                                        height: 390%;
+                                        width: 210%;
+                                        top: -145%;
+                                        left: -55%;
+                                        border: none;
+                                        box-shadow: 6px 6px 6px black;
+                                        border-radius: 0px;
+                                        transform: rotate(-45deg);
+                                        overflow: hidden;
+                                        z-index: 999;
+                                        transition: 0.5s;
+                              }
+
+                              #gameonImageContainer.small {
+                                        position: absolute;
+                                        height: 70%;
+                                        width: 70%;
+                                        top: 15%;
+                                        left: 15%;
+                                        border: 1px solid teal;
+                                        border-radius: 5px;
+                                        overflow: hidden;
+                                        z-index: 10;
+                                        transition: 0.5s;
+                              }
+
+                              #gameonImageContainer.large {
+                                        position: absolute;
+                                        height: 390%;
+                                        width: 210%;
+                                        top: -145%;
+                                        left: -55%;
+                                        border: none;
+                                        box-shadow: 6px 6px 6px black;
+                                        border-radius: 0px;
+                                        transform: rotate(-45deg);
+                                        overflow: hidden;
+                                        z-index: 999;
+                                        transition: 0.5s;
+                              }
+
+                    .workImages {
+                              position: absolute;
+                              filter: blur(2px);
+                              transform: rotate(-45deg);
+                    }
+
+                              #ldmImage.smaller {
+                                        position: absolute;
+                                        height: 300%;
+                                        top: -48%;
+                                        left: 19%;
+                                        filter: blur(2px);
+                                        transform: rotate(-45deg);
+                                        transition: 0.5s;
+                              }
+
+                              #ldmImage.larger {
+                                        position: absolute;
+                                        height: 30%;
+                                        width: 103%;
+                                        top: 0%;
+                                        margin-left: -20%;
+                                        filter: blur(0px);
+                                        transform: rotate(0deg);
+                                        transition: 0.5s;
+                              }
+
+                              #instafamousImage.smaller {
+                                        position: absolute;
+                                        height: 300%;
+                                        top: -45%;
+                                        left: 15%;
+                                        filter: blur(2px);
+                                        transform: rotate(-45deg);
+                                        transition: 0.5s;
+                              }
+
+                              #instafamousImage.larger {
+                                        position: absolute;
+                                        height: 30%;
+                                        width: 103%;
+                                        top: 0%;
+                                        margin-left: -20%;
+                                        filter: blur(0px);
+                                        transform: rotate(0deg);
+                                        transition: 0.5s;
+                              }
+
+                              #academyImage.smaller {
+                                        position: absolute;
+                                        height: 380%;
+                                        top: -66%;
+                                        left: 50%;
+                                        filter: blur(2px);
+                                        transform: rotate(-45deg);
+                                        transition: 0.5s;
+                              }
+
+                              #academyImage.larger {
+                                        position: absolute;
+                                        height: 30%;
+                                        width: 103%;
+                                        top: 0%;
+                                        margin-left: -20%;
+                                        filter: blur(0px);
+                                        transform: rotate(0deg);
+                                        transition: 0.5s;
+                              }
+
+                              #gameonImage.smaller {
+                                        position: absolute;
+                                        height: 500%;
+                                        top: -150%;
+                                        left: 30%;
+                                        filter: blur(2px);
+                                        transform: rotate(-45deg);
+                                        transition: 0.5s;
+                              }
+
+                              #gameonImage.larger {
+                                        position: absolute;
+                                        height: 30%;
+                                        width: 103%;
+                                        top: 0%;
+                                        margin-left: -20%;
+                                        filter: blur(0px);
+                                        transform: rotate(0deg);
+                                        transition: 0.5s;
+                              }
+
+                    #myGithubText {
+                              position: absolute;
+                              height: 6%;
+                              width: 70%;
+                              top: 85%;
+                              left: 10%;
+                              font-size: 1.4rem;
+                    }
+
+                    #myGithubLink {
+                              position: absolute;
+                              height: 6%;
+                              width: 20%;
+                              top: 88.6%;
+                              left: 80%;
+                              font-size: 1.4rem;
+                              letter-spacing: 6px;                         
+                    }
+
+                    #myLinkedInText {
+                              position: absolute;
+                              height: 6%;
+                              width: 70%;
+                              top: 90%;
+                              left: 10%;
+                              font-size: 1.4rem;
+                    }
+
+                    #myLinkedInLink {
+                              position: absolute;
+                              height: 6%;
+                              width: 20%;
+                              top: 93.6%;
+                              left: 82%;
+                              font-size: 1.4rem;
+                              letter-spacing: 6px;                         
+                    }
+          }
+
+          #myWorkDiv.open {
+                    transform: rotateY(0deg);
+                    transition: 0.3s;
+                    transition-delay: 2.5s;
+          }
+
+          #myWorkDiv.closed {
+                    transform: rotateY(-90deg);
+                    transition: 0.3s;
+                    transition-delay: 0s;
+          }
+}

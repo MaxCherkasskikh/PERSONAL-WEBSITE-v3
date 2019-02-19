@@ -1,0 +1,54 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Chathura');
+
+@font-face { 
+    font-family: Exodar; 
+    src: url('Exodar-Outline.ttf'); 
+}
+
+body, html {
+    height: 100%;
+    margin: 0 auto;
+    color: orangered;
+}
+
+body {
+    font-family: 'Chathura';
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1.3em;
+    display: grid;
+    grid-template-columns: 5% auto;
+
+    li {
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+}
+
+section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+button {
+    font-family: 'Chathura';
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 2px teal;
+}

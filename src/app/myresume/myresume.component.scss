@@ -1,0 +1,367 @@
+#myResumeContainer {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          top: 0%;
+          left: 0%;
+          background: rgb(24, 24, 24);
+          overflow: hidden;
+
+          #lighthouseBackgroundDiv {
+                    position: absolute;
+                    height: 40%;
+                    width: 100%;
+                    top: 6%;
+                    background: url(src/assets/img/lighthouse.gif);
+                    background-attachment: fixed;
+                    background-size: 120% 53%;
+                    background-position: 30% -10%;
+                    background-repeat: no-repeat;
+                    -webkit-filter: blur(1px);
+                    z-index: 0;
+          }
+
+          #lighthouseBackgroundDivCover {
+                    position: absolute;
+                    height: 42%;
+                    width: 100%;
+                    top: 5%;
+                    background: linear-gradient(rgb(24, 24, 24), transparent, rgba(24, 24, 24, 0.5), rgba(24, 24, 24, 0.7), rgba(24, 24, 24, 0.8), rgba(24, 24, 24, 0.9), rgb(24, 24, 24));
+                    z-index: 1;
+          }
+
+          #mainResumeContainer {
+                    position: absolute;
+                    height: 90%;
+                    width: 90%;
+                    top: 7%;
+                    left: 5%;
+                    z-index: 100;
+
+                    #resumeMainHeading {
+                              position: absolute;
+                              width: 100%;
+                              top: -5%;
+                              text-align: center;
+                              font-size: 2rem;
+                    }
+
+                    #page1Button {
+                              position: absolute;
+                              height: 5%;
+                              width: 33.3%;
+                              top: 33.4%;
+                              left: 0%;
+                              text-align: center;
+                              font-size: 1.4rem;
+                              z-index: 100;
+                    }       
+
+                    #page2Button {
+                              position: absolute;
+                              height: 5%;
+                              width: 33.3%;
+                              top: 33.4%;
+                              left: 33.3%;
+                              text-align: center;
+                              font-size: 1.4rem;
+                              z-index: 100;
+                    }
+
+                    #page3Button {
+                              position: absolute;
+                              height: 5%;
+                              width: 33.3%;
+                              top: 33.4%;
+                              left: 66.6%;
+                              text-align: center;
+                              font-size: 1.4rem;
+                              z-index: 100;
+                    }
+
+                    #resumeButtonBackground {
+                              position: absolute;
+                              height: 5%;
+                              width: 112%;
+                              top: 34.2%;
+                              left: -6%;
+                              background: rgba(0, 0, 0, 0.3);
+                              z-index: 1;
+                    }
+
+                    #resumePageButtonUnderline {
+                              position: absolute;
+                              height: 0.05%;
+                              width: 33.3%;
+                              top: 39.2%;
+                              left: 0%;
+                              border: 1px solid teal;
+                              background: teal;
+                    }
+
+                    #resumePageButtonUnderline.pageone {
+                              left: 0%;
+                              transition: 0.5s;
+                    }
+
+                    #resumePageButtonUnderline.pagetwo {
+                              left: 33.3%;
+                              transition: 0.5s;                              
+                    }
+
+                    #resumePageButtonUnderline.pagethree {
+                              left: 66.6%;
+                              transition: 0.5s;                              
+                    }
+
+                    #resumeDiv1 {
+                              position: absolute;
+                              height: 60%;
+                              width: 80%;
+                              top: 40%;
+                              left: 10%;
+
+                              #resumeLink1 {
+                                        position: absolute;
+                                        height: 85%;
+                                        width: 70%;
+                                        top: 5%;
+                                        left: 15%;
+                                        overflow: hidden;
+                                        border: 1px solid teal;
+                                        border-radius: 3px;
+
+                                        #resumeImage1 {
+                                                  position: absolute;
+                                                  height: 100%;
+                                                  width: 100%;
+                                                  top: 0%;
+                                                  left: 0%;
+                                        }
+                              }
+
+                              #resumeLink1.smallresume {
+                                        position: absolute;
+                                        height: 85%;
+                                        width: 70%;
+                                        top: 5%;
+                                        left: 15%;
+                                        overflow: hidden;
+                                        border: 1px solid teal;
+                                        border-radius: 3px;
+                                        transition: 0.5s;
+                              }
+
+                              #resumeLink1.largeresume {
+                                        position: absolute;
+                                        height: 140%;
+                                        width: 130%;
+                                        top: -65%;
+                                        left: -15%;
+                                        overflow: hidden;
+                                        border: 1px solid teal;
+                                        border-radius: 3px;
+                                        transition: 0.5s;
+                                        z-index: 1000;
+                              }
+
+                              #pageEnlargeButton1 {
+                                        position: absolute;
+                                        width: 100%;
+                                        top: 90%;
+                                        left: 0%;
+                                        text-align: center;
+                                        font-size: 1.4rem;
+                              }
+                    }
+
+                    #resumeDiv1.pageone {
+                              left: 10%;
+                              transition: 0.5s;
+                    }
+
+                    #resumeDiv1.pagetwo {
+                              left: -110%;
+                              transition: 0.5s;                              
+                    }
+
+                    #resumeDiv1.pagethree {
+                              left: -110%;
+                              transition: 0.5s;                              
+                    }
+
+                    #resumeDiv2 {
+                              position: absolute;
+                              height: 60%;
+                              width: 80%;
+                              top: 40%;
+                              left: 110%;
+
+                              #resumeLink2 {
+                                        position: absolute;
+                                        height: 85%;
+                                        width: 70%;
+                                        top: 5%;
+                                        left: 15%;
+                                        overflow: hidden;
+                                        border: 1px solid teal;
+                                        border-radius: 3px;
+
+                                        #resumeImage2 {
+                                                  position: absolute;
+                                                  height: 100%;
+                                                  width: 100%;
+                                                  top: 0%;
+                                                  left: 0%;
+                                        }
+                              }
+
+                              #resumeLink2.smallresume {
+                                        position: absolute;
+                                        height: 85%;
+                                        width: 70%;
+                                        top: 5%;
+                                        left: 15%;
+                                        overflow: hidden;
+                                        border: 1px solid teal;
+                                        border-radius: 3px;
+                              }
+
+                              #resumeLink2.largeresume {
+                                        position: absolute;
+                                        height: 140%;
+                                        width: 130%;
+                                        top: -65%;
+                                        left: -15%;
+                                        overflow: hidden;
+                                        border: 1px solid teal;
+                                        border-radius: 3px;
+                                        transition: 0.5s;
+                                        z-index: 1000;
+                              }
+
+                              #pageEnlargeButton2 {
+                                        position: absolute;
+                                        width: 100%;
+                                        top: 90%;
+                                        left: 0%;
+                                        text-align: center;
+                                        font-size: 1.4rem;
+                              }
+                    }
+
+                    #resumeDiv2.pageone {
+                              left: 110%;
+                              transition: 0.5s;
+                    }
+
+                    #resumeDiv2.pagetwo {
+                              left: 10%;
+                              transition: 0.5s;                              
+                    }
+
+                    #resumeDiv2.pagethree {
+                              left: -110%;
+                              transition: 0.5s;                              
+                    }
+
+                    #resumeDiv3 {
+                              position: absolute;
+                              height: 60%;
+                              width: 80%;
+                              top: 40%;
+                              left: 110%;
+
+                              #resumeLink3 {
+                                        position: absolute;
+                                        height: 85%;
+                                        width: 70%;
+                                        top: 5%;
+                                        left: 15%;
+                                        overflow: hidden;
+                                        border: 1px solid teal;
+                                        border-radius: 3px;
+
+                                        #resumeImage3 {
+                                                  position: absolute;
+                                                  height: 100%;
+                                                  width: 100%;
+                                                  top: 0%;
+                                                  left: 0%;
+                                        }
+                              }
+
+                              #resumeLink3.smallresume {
+                                        position: absolute;
+                                        height: 85%;
+                                        width: 70%;
+                                        top: 5%;
+                                        left: 15%;
+                                        overflow: hidden;
+                                        border: 1px solid teal;
+                                        border-radius: 3px;
+                              }
+
+                              #resumeLink3.largeresume {
+                                        position: absolute;
+                                        height: 140%;
+                                        width: 130%;
+                                        top: -65%;
+                                        left: -15%;
+                                        overflow: hidden;
+                                        border: 1px solid teal;
+                                        border-radius: 3px;
+                                        transition: 0.5s;
+                                        z-index: 1000;
+                              }
+
+                              #pageEnlargeButton3 {
+                                        position: absolute;
+                                        width: 100%;
+                                        top: 90%;
+                                        left: 0%;
+                                        text-align: center;
+                                        font-size: 1.4rem;
+                              }
+                    }
+
+                    #resumeDiv3.pageone {
+                              left: 110%;
+                              transition: 0.5s;
+                    }
+
+                    #resumeDiv3.pagetwo {
+                              left: 110%;
+                              transition: 0.5s;                              
+                    }
+
+                    #resumeDiv3.pagethree {
+                              left: 10%;
+                              transition: 0.5s;                              
+                    }
+
+                    .toDownloadPars {
+                              position: absolute;
+                              height: 15%;
+                              width: 40%;
+                              top: 70%;
+                              left: 30%;
+                              padding: 0;
+                              font-size: 1.1rem;
+                              text-align: center;
+                              z-index: -1;
+                    }
+          }
+
+          #mainResumeContainer.open {
+                    transform: rotateY(0deg);
+                    transition: 0.3s;
+                    transition-delay: 2.5s;
+          }
+
+          #mainResumeContainer.closed {
+                    transform: rotateY(-90deg);
+                    transition: 0.3s;
+                    transition-delay: 0s;
+          }
+}

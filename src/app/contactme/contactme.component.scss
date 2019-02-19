@@ -1,0 +1,196 @@
+#contactMeContainer {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          top: 0%;
+          left: 0%;
+          background: rgb(24, 24, 24);
+          overflow: hidden;
+
+          #trainBackgroundDiv {
+                    position: absolute;
+                    height: 40%;
+                    width: 100%;
+                    top: 6%;
+                    background: url(src/assets/img/train.gif);
+                    background-attachment: fixed;
+                    background-size: 110% 45%;
+                    background-position: 50% 0%;
+                    background-repeat: no-repeat;
+                    -webkit-filter: blur(1px);
+                    z-index: 0;
+          }
+
+          #trainBackgroundDivCover {
+                    position: absolute;
+                    height: 44%;
+                    width: 100%;
+                    top: 5%;
+                    background: linear-gradient(rgb(24, 24, 24), transparent, rgba(24, 24, 24, 0.5), rgba(24, 24, 24, 0.7), rgba(24, 24, 24, 0.8), rgba(24, 24, 24, 0.9), rgb(24, 24, 24));
+                    z-index: 1;
+          }
+
+          #contactFormDiv {
+                    position: absolute;
+                    height: 65%;
+                    width: 90%;
+                    top: 30%;
+                    left: 5%;
+                    z-index: 1;
+
+                    #contactMeMainHeading {
+                              position: absolute;
+                              width: 100%;
+                              top: -42%;
+                              text-align: center;
+                              font-size: 2rem;
+                    }
+
+                    #contactFormHeading {
+                              position: absolute;
+                              height: 20%;
+                              width: 100%;
+                              top: -5.9%;
+                              left: 00%;
+                              font-size: 1.1rem;
+                              text-align: left;
+                    }
+
+                    #formContainer {
+                              position: absolute;
+                              height: 100%;
+                              width: 100%;
+                              top: 0%;
+                              left: 0%;
+
+                              #firstNameInput {
+                                        position: absolute;
+                                        height: 7%;
+                                        width: 40%;
+                                        top: 15%;
+                                        left: 2.7%;
+                                        border: 1px solid teal;
+                                        color: white;
+                                        padding-left: 2%;
+                                        padding-right: 2%;
+                                        border-radius: 5px;
+                                        background: none;
+                              }
+
+                              #lastNameInput {
+                                        position: absolute;
+                                        height: 7%;
+                                        width: 40%;
+                                        top: 15%;
+                                        left: 52.3%;
+                                        border: 1px solid teal;
+                                        color: white;
+                                        padding-left: 2%;
+                                        padding-right: 2%;
+                                        border-radius: 5px;
+                                        background: none;
+                              }
+
+                              #emailInput {
+                                        position: absolute;
+                                        height: 7%;
+                                        width: 40%;
+                                        top: 28%;
+                                        left: 2.7%;
+                                        border: 1px solid teal;
+                                        color: white;
+                                        padding-left: 2%;
+                                        padding-right: 2%;
+                                        border-radius: 5px;
+                                        background: none;
+                              }
+
+                              #subjectInput {
+                                        position: absolute;
+                                        height: 7%;
+                                        width: 40%;
+                                        top: 28%;
+                                        left: 52.3%;
+                                        border: 1px solid teal;
+                                        color: white;
+                                        padding-left: 2%;
+                                        padding-right: 2%;
+                                        border-radius: 5px;
+                                        background: none;
+                              }
+
+                                        #contactFormMessageDescription {
+                                                  position: absolute;
+                                                  height: 20%;
+                                                  width: 100%;
+                                                  top: 35%;
+                                                  left: 0%;
+                                                  text-align: left;
+                                                  font-size: 1.05rem;
+                                        }
+
+                              #messageInput {
+                                        position: absolute;
+                                        height: 25%;
+                                        width: 90%;
+                                        top: 60%;
+                                        left: 2.7%;
+                                        border: 1px solid teal;
+                                        color: white;
+                                        padding-left: 2%;
+                                        padding-right: 2%;
+                                        border-radius: 5px;
+                                        background: none;
+                              }
+
+                              #submitButton {
+                                        position: absolute;
+                                        height: 10%;
+                                        width: 40%;
+                                        top: 89%;
+                                        left: 30%;
+                                        background: none;
+                                        border: 1px solid teal;
+                                        border-radius: 5px;
+                                        text-shadow: none;
+                                        color: teal;
+                                        text-align: center;
+                                        font-size: 1.5rem;
+                                        z-index: 999;
+                              }
+                    }
+          }
+}
+
+::placeholder {
+          color: orangered;
+          padding-left: 15%;
+          font-family: 'Chathura';
+          font-size: 1.3rem;
+}
+
+#socialMediaDiv.open {
+          transform: rotateY(0deg);
+          transition: 0.3s;
+          transition-delay: 2.4s;
+          transform-origin: center;
+}
+
+#socialMediaDiv.closed {
+          transform: rotateY(90deg);
+          transition: 0.3s;
+          transform-origin: center;
+}
+
+#contactFormDiv.open {
+          transform: rotateY(0deg);
+          transition: 0.3s;
+          transition-delay: 2.4s;
+          transform-origin: center;
+}
+
+#contactFormDiv.closed {
+          transform: rotateY(90deg);
+          transition: 0.3s;
+          transform-origin: center;
+}

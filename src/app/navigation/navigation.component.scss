@@ -1,0 +1,367 @@
+header {
+    position: fixed;
+    height: 6%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    border-bottom: 0.1px solid teal;
+    z-index: 10000; 
+
+    #nameLogo {
+        position: absolute;
+        width: 100%;
+        top: 12%;
+        left: 0%;
+        font-family: 'Exodar';
+        font-size: 1.5rem;
+        font-weight: 100;
+        letter-spacing: 4px;
+        padding-left: 6%;
+        color: teal;
+        z-index: 1000;
+    }
+
+    #navVerticalLineLeft {
+        position: absolute;
+        height: 1670%;
+        width: 0.3%;
+        background: teal;
+        top: 0%;
+        left: 3%;
+        z-index: 1000;
+    }
+
+    #navVerticalLineRight {
+        position: absolute;
+        height: 1670%;
+        width: 0.3%;
+        background: teal;
+        top: 0%;
+        left: 97%;
+        z-index: 1000;
+    }
+
+    #navMenuButton {
+        position: absolute;
+        height: 80%;
+        top: 10%;
+        left: 87.5%;
+        z-index: 10000;
+    }
+
+    #navMenuContainer {
+        position: absolute;
+        height: 900%;
+        width: 80%;
+        top: 100%;
+        left: 0%;
+        display: initial;
+        z-index: 10000;
+
+        #menuLinkContainer {
+            position: absolute;
+            height: 100%;
+            width: 88%;
+            top: -3.7%;
+            left: 0%;
+
+            #menuLink1 {
+                top: 1%;
+            }
+
+            #menuLink2 {
+                top: 10%;
+            }
+
+            #menuLink3 {
+                top: 19%;
+            }
+
+            #menuLink4 {
+                top: 28%;
+            }
+
+            #menuLink5 {
+                top: 37%;
+            }
+
+            #menuLink6 {
+                top: 46%;
+            }
+
+            #menuLink7 {
+                top: 55%;
+            }
+
+            #menuLink8 {
+                top: 64%;
+            }
+
+            #menuLink9 {
+                top: 73%;
+            }
+
+            #menuLink10 {
+                top: 82%;
+            }
+
+            #menuLink11 {
+                top: 91%;
+            }
+
+            #menuLink12 {
+                top: 100%;
+            }
+
+            li {
+                position: absolute;
+                height: 8%;
+                width: 108%;
+                top: 0%;
+                left: -8%;
+                background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2), transparent);
+            }
+
+            a {
+                position: absolute;
+                height: 100%;
+                width: 87%;
+                top: 0%;
+                left: 0%;
+                font-size: 1.7rem;
+                letter-spacing: 7px;
+                padding-left: 12%;
+                text-align: left;
+                color: orangered;
+            }
+        }
+    }
+}
+
+#navMenuButton.closed {
+    transform: rotate(0deg);
+    transition: 0.5s;
+}
+
+#navMenuButton.open {
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+
+#navMenuContainer.closed {
+    transform: rotateY(-90deg);
+    transform-origin: left;
+    transition: 0s;
+    transition-delay: 2.5s;
+}
+
+#navMenuContainer.open {
+    transform: rotateY(0deg);
+    transform-origin: left;
+    transition: 0s;    
+}
+
+#navMenuContainer.initial {
+    transform: rotateY(-90deg);
+    transform-origin: left;
+    transition: 0s;
+    transition-delay: 0s;
+}
+
+#navMenuContainer.secondary {
+    transform: rotateY(0deg);
+    transform-origin: left;
+    transition: 0s;
+    transition-delay: 0s;    
+}
+
+#menuLink1.closed {
+    left: -20%;
+    transform: rotate(90deg);
+    transition: 0.7s;
+    transition-delay: 2.2s;
+    transform-origin: left;
+}
+
+#menuLink1.open {
+    left: 0%;
+    transform: rotate(0deg);
+    transition: 0.7s;
+    transition-delay: 0.4s;
+    transform-origin: left;
+}
+
+#menuLink2.closed {
+    left: -30%;
+    transform: rotate(90deg);
+    transition: 0.7s;
+    transition-delay: 2s;
+    transform-origin: left;
+}
+
+#menuLink2.open {
+    left: 0%;
+    transform: rotate(0deg);
+    transition: 0.7s;
+    transition-delay: 0.6s;
+    transform-origin: left;
+}
+
+#menuLink3.closed {
+    left: -30%;
+    transform: rotate(90deg);
+    transition: 0.7s;
+    transition-delay: 1.8s;
+    transform-origin: left;
+}
+
+#menuLink3.open {
+    left: 0%;
+    transform: rotate(0deg);
+    transition: 0.7s;
+    transition-delay: 0.8s;
+    transform-origin: left;
+}
+
+#menuLink4.closed {
+    left: -30%;
+    transform: rotate(90deg);
+    transition: 0.7s;
+    transition-delay: 1.6s;
+    transform-origin: left;
+}
+
+#menuLink4.open {
+    left: 0%;
+    transform: rotate(0deg);
+    transition: 0.7s;
+    transition-delay: 1s;
+    transform-origin: left;
+}
+
+#menuLink5.closed {
+    left: -30%;
+    transform: rotate(90deg);
+    transition: 0.7s;
+    transition-delay: 1.4s;
+    transform-origin: left;
+}
+
+#menuLink5.open {
+    left: 0%;
+    transform: rotate(0deg);
+    transition: 0.7s;
+    transition-delay: 1.2s;
+    transform-origin: left;
+}
+
+#menuLink6.closed {
+    left: -30%;
+    transform: rotate(90deg);
+    transition: 0.7s;
+    transition-delay: 1.2s;
+    transform-origin: left;
+}
+
+#menuLink6.open {
+    left: 0%;
+    transform: rotate(0deg);
+    transition: 0.7s;
+    transition-delay: 1.4s;
+    transform-origin: left;
+}
+
+#menuLink7.closed {
+    left: -30%;
+    transform: rotate(90deg);
+    transition: 0.7s;
+    transition-delay: 1s;
+    transform-origin: left;
+}
+
+#menuLink7.open {
+    left: 0%;
+    transform: rotate(0deg);
+    transition: 0.7s;
+    transition-delay: 1.6s;
+    transform-origin: left;
+}
+
+#menuLink8.closed {
+    left: -30%;
+    transform: rotate(90deg);
+    transition: 0.7s;
+    transition-delay: 0.8s;
+    transform-origin: left;
+}
+
+#menuLink8.open {
+    left: 0%;
+    transform: rotate(0deg);
+    transition: 0.7s;
+    transition-delay: 1.8s;
+    transform-origin: left;
+}
+
+#menuLink9.closed {
+    left: -30%;
+    transform: rotate(90deg);
+    transition: 0.7s;
+    transition-delay: 0.6s;
+    transform-origin: left;
+}
+
+#menuLink9.open {
+    left: 0%;
+    transform: rotate(0deg);
+    transition: 0.7s;
+    transition-delay: 2s;
+    transform-origin: left;
+}
+
+#menuLink10.closed {
+    left: -30%;
+    transform: rotate(90deg);
+    transition: 0.7s;
+    transition-delay: 0.4s;
+    transform-origin: left;
+}
+
+#menuLink10.open {
+    left: 0%;
+    transform: rotate(0deg);
+    transition: 0.7s;
+    transition-delay: 2.2s;
+    transform-origin: left;
+}
+
+#menuLink11.closed {
+    left: -30%;
+    transform: rotate(90deg);
+    transition: 0.7s;
+    transition-delay: 0.2s;
+    transform-origin: left;
+}
+
+#menuLink11.open {
+    left: 0%;
+    transform: rotate(0deg);
+    transition: 0.7s;
+    transition-delay: 2.4s;
+    transform-origin: left;
+}
+
+#menuLink12.closed {
+    left: -30%;
+    transform: rotate(90deg);
+    transition: 0.7s;
+    transition-delay: 0s;
+    transform-origin: left;
+}
+
+#menuLink12.open {
+    left: 0%;
+    transform: rotate(0deg);
+    transition: 0.7s;
+    transition-delay: 2.6s;
+    transform-origin: left;
+}

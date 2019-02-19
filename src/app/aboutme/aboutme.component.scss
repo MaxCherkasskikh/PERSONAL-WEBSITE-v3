@@ -1,0 +1,341 @@
+#aboutMeContainer {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          top: 0%;
+          left: 0%;
+          background: rgb(24, 24, 24);
+          overflow: hidden;
+
+          #cityBackgroundDiv {
+                    position: absolute;
+                    height: 40%;
+                    width: 100%;
+                    top: 6%;
+                    background: url(src/assets/img/fire.gif);
+                    background-attachment: fixed;
+                    background-size: 100% 45%;
+                    background-position: 30% 0%;
+                    background-repeat: no-repeat;
+                    -webkit-filter: blur(1px);
+                    z-index: 0;
+          }
+
+          #cityBackgroundDivCover {
+                    position: absolute;
+                    height: 44%;
+                    width: 100%;
+                    top: 5%;
+                    background: linear-gradient(rgb(24, 24, 24), transparent, rgba(24, 24, 24, 0.5), rgba(24, 24, 24, 0.7), rgba(24, 24, 24, 0.8), rgba(24, 24, 24, 0.9), rgb(24, 24, 24));
+                    z-index: 1;
+          }
+
+          #aboutMeSwitchContainer {
+                    position: absolute;
+                    height: 90%;
+                    width: 90%;
+                    top: 8%;
+                    left: 5%;
+                    z-index: 3;
+
+                    #buttonCover {
+                              position: absolute;
+                              height: 4.3%;
+                              width: 110.6%;
+                              top: 1%;
+                              left: -5.5%;
+                              background: rgba(0, 0, 0, 0.4);
+                              z-index: 0;
+                    }
+
+                    #headshotContainer {
+                              position: absolute;
+                              height: 17%;
+                              width: 30%;
+                              top: 0.7%;
+                              left: 0%;
+                              border: 4px double teal;
+                              border-radius: 100%;
+                              overflow: hidden;
+
+                              #headshotImage {
+                                        position: absolute;
+                                        height: 190%;
+                                        top: 0%;
+                                        left: -5%;
+                              }
+                    }
+
+                    #aboutMeButton {
+                              position: absolute;
+                              height: 7%;
+                              width: 30%;
+                              top: -0.6%;
+                              left: 35%;
+                              background: none;
+                              border: none;
+                              color: teal;
+                              text-align: center;
+                              text-shadow: 1px 1px 1px white;
+                              font-size: 1.6rem;
+                              z-index: 999;
+                    }
+
+                    #myPhilosophyButton {
+                              position: absolute;
+                              height: 7%;
+                              width: 30%;
+                              top: -0.6%;
+                              left: 65%;
+                              background: none;
+                              border: none;
+                              color: teal;
+                              text-align: center;
+                              text-shadow: 1px 1px 1px white;
+                              font-size: 1.6rem;
+                              z-index: 999;
+                    }
+
+                    #switchUnderline {
+                              position: absolute;
+                              height: 0.1%;
+                              width: 29.5%;
+                              top: 5.7%;
+                              left: 35%;
+                              border: 0.5px solid teal;
+                    }
+
+                    #switchUnderline.aboutme {
+                              left: 35%;
+                              transition: 0.5s;
+                    }
+
+                    #switchUnderline.myphilosophy {
+                              left: 65%;
+                              transition: 0.5s;
+                    }
+
+                    #aboutMeSection {
+                              position: absolute;
+                              height: 62%;
+                              width: 98%;
+                              top: 37.5%;
+                              left: 1%;
+                              overflow: scroll;
+                              background: rgba(0, 0, 0, 0.4);
+                              border-radius: 5px;
+
+                              #aboutMePar1 {
+                                        position: absolute;
+                                        height: 20%;
+                                        width: 95%;
+                                        top: -3.5%;
+                                        left: 0%;
+                                        padding-left: 2%;
+                                        padding-right: 2%;
+                                        text-align: left;
+                                        font-size: 1.1rem;
+                              }
+
+                              #aboutMePar2 {
+                                        position: absolute;
+                                        height: 30%;
+                                        width: 95%;
+                                        top: 23%;
+                                        left: 0%;
+                                        padding-left: 2%;
+                                        padding-right: 2%;
+                                        text-align: left;
+                                        font-size: 1.1rem;
+                              }
+
+                              #aboutMePar3 {
+                                        position: absolute;
+                                        height: 20%;
+                                        width: 95%;
+                                        top: 66%;
+                                        left: 0%;
+                                        padding-left: 2%;
+                                        padding-right: 2%;
+                                        text-align: left;
+                                        font-size: 1.1rem;
+                              }
+
+                              #aboutMePar4 {
+                                        position: absolute;
+                                        height: 30%;
+                                        width: 95%;
+                                        top: 94%;
+                                        left: 0%;
+                                        padding-left: 2%;
+                                        padding-right: 2%;
+                                        text-align: left;
+                                        font-size: 1.1rem;
+                              }
+
+                              #aboutMePar5 {
+                                        position: absolute;
+                                        height: 19%;
+                                        width: 95%;
+                                        top: 137.2%;
+                                        left: 0%;
+                                        padding-left: 2%;
+                                        padding-right: 2%;
+                                        text-align: left;
+                                        font-size: 1.1rem;
+                              }
+
+                              #aboutMePar6 {
+                                        position: absolute;
+                                        height: 49%;
+                                        width: 95%;
+                                        top: 164%;
+                                        left: 0%;
+                                        padding-left: 2%;
+                                        padding-right: 2%;
+                                        text-align: left;
+                                        font-size: 1.1rem;
+                              }
+
+                              #aboutMePar7 {
+                                        position: absolute;
+                                        height: 24%;
+                                        width: 95%;
+                                        top: 229.5%;
+                                        left: 0%;
+                                        padding-left: 2%;
+                                        padding-right: 2%;
+                                        text-align: left;
+                                        font-size: 1.1rem;
+                              }
+
+                              #aboutMePar8 {
+                                        position: absolute;
+                                        height: 42%;
+                                        width: 95%;
+                                        top: 264%;
+                                        left: 0%;
+                                        padding-left: 2%;
+                                        padding-right: 2%;
+                                        text-align: left;
+                                        font-size: 1.1rem;
+                              }
+
+                              #aboutMePar9 {
+                                        position: absolute;
+                                        height: 43%;
+                                        width: 95%;
+                                        top: 322%;
+                                        left: 0%;
+                                        padding-left: 2%;
+                                        padding-right: 2%;
+                                        text-align: left;
+                                        font-size: 1.1rem;
+                              }
+
+                              #aboutMePar10 {
+                                        position: absolute;
+                                        height: 30%;
+                                        width: 95%;
+                                        top: 380.5%;
+                                        left: 0%;
+                                        padding-left: 2%;
+                                        padding-right: 2%;
+                                        text-align: left;
+                                        font-size: 1.1rem;
+                              }
+                    }
+
+                    #aboutMeSection.aboutme {
+                              left: 0%;
+                              transition: 0.5s;
+                    }
+
+                    #aboutMeSection.myphilosophy {
+                              left: -110%;
+                              transition: 0.5s;
+                    }
+
+                    #myPhilosophySection {
+                              position: absolute;
+                              height: 62%;
+                              width: 98%;
+                              top: 37.5%;
+                              left: 110%;
+                              overflow: scroll;
+                              background: rgba(0, 0, 0, 0.4);
+                              border-radius: 5px;
+
+                              #myPhilosophyPar1 {
+                                        position: absolute;
+                                        height: 36%;
+                                        width: 95%;
+                                        top: -3.5%;
+                                        left: 0%;
+                                        padding-left: 2%;
+                                        padding-right: 2%;
+                                        text-align: left;
+                                        font-size: 1.1rem;
+                              }
+
+                              #myPhilosophyPar2 {
+                                        position: absolute;
+                                        height: 42%;
+                                        width: 95%;
+                                        top: 48%;
+                                        left: 0%;
+                                        padding-left: 2%;
+                                        padding-right: 2%;
+                                        text-align: left;
+                                        font-size: 1.1rem;
+                              }
+
+                              #myPhilosophyPar3 {
+                                        position: absolute;
+                                        height: 49%;
+                                        width: 95%;
+                                        top: 107%;
+                                        left: 0%;
+                                        padding-left: 2%;
+                                        padding-right: 2%;
+                                        text-align: left;
+                                        font-size: 1.1rem;
+                              }
+
+                              #myPhilosophyPar4 {
+                                        position: absolute;
+                                        height: 36.5%;
+                                        width: 95%;
+                                        top: 174%;
+                                        left: 0%;
+                                        padding-left: 2%;
+                                        padding-right: 2%;
+                                        text-align: left;
+                                        font-size: 1.1rem;
+                              }
+                    }
+
+                    #myPhilosophySection.aboutme {
+                              left: 110%;
+                              transition: 0.5s;
+                    }
+
+                    #myPhilosophySection.myphilosophy {
+                              left: 0%;
+                              transition: 0.5s;
+                    }
+          }
+}
+
+#aboutMeSwitchContainer.open {
+          transform: rotateY(0deg);
+          transition: 0.3s;
+          transition-delay: 2.4s;
+          transform-origin: center;
+}
+
+#aboutMeSwitchContainer.closed {
+          transform: rotateY(90deg);
+          transition: 0.3s;
+          transform-origin: center;
+}

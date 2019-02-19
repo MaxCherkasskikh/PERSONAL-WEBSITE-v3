@@ -1,0 +1,694 @@
+#mySkillsContainer {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          top: 0%;
+          left: 0%;
+          background: rgb(24, 24, 24);
+          overflow: hidden;
+
+          #burnBackgroundDiv {
+                    position: absolute;
+                    height: 40%;
+                    width: 100%;
+                    top: 6%;
+                    background: url(src/assets/img/burn.gif);
+                    background-attachment: fixed;
+                    background-size: 100% 45%;
+                    background-position: 30% 0%;
+                    background-repeat: no-repeat;
+                    -webkit-filter: blur(1px);
+                    z-index: 0;
+          }
+
+          #burnBackgroundDivCover {
+                    position: absolute;
+                    height: 44%;
+                    width: 100%;
+                    top: 5%;
+                    background: linear-gradient(rgb(24, 24, 24), transparent, rgba(24, 24, 24, 0.5), rgba(24, 24, 24, 0.7), rgba(24, 24, 24, 0.8), rgba(24, 24, 24, 0.9), rgb(24, 24, 24));
+                    z-index: 1;
+          }
+
+          #overallSkillsDiv {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    top: 0%;
+                    left: 0%;
+
+                    #skillsMainHeading {
+                              position: absolute;
+                              width: 100%;
+                              top: 1.4%;
+                              text-align: center;
+                              font-size: 2rem;
+                    }
+
+                    #generalSkillsButton {
+                              position: absolute;
+                              height: 6%;
+                              width: 30%;
+                              top: 12%;
+                              left: 20%;
+                              color: orangered;
+                              text-align: center;
+                              text-shadow: 1px 1px 1px white;
+                              font-size: 1.5rem;
+                              z-index: 1000;                 
+                    }
+
+                    #specificSkillsButton {
+                              position: absolute;
+                              height: 6%;
+                              width: 30%;
+                              top: 12%;
+                              left: 50%;
+                              color: orangered;
+                              text-align: center;
+                              text-shadow: 1px 1px 1px white;
+                              font-size: 1.5rem; 
+                              z-index: 1000;                         
+                    }
+
+                    #skillsSwitchUnderline {
+                              position: absolute;
+                              height: 0.05%;
+                              width: 30%;
+                              top: 18%;
+                              left: 20%;
+                              background: orangered;
+                              border: 1px solid orangered;
+                              z-index: 100;
+                    }
+
+                              #skillsSwitchUnderline.generalskills {
+                                        left: 20%;
+                                        transition: 0.5s;
+                              }
+
+                              #skillsSwitchUnderline.specificskills {
+                                        left: 50%;
+                                        transition: 0.5s;                              
+                              }
+
+                    #skillsButtonsBackgroundCover {
+                              position: absolute;
+                              height: 5%;
+                              width: 100%;
+                              top: 12.6%;
+                              left: 0%;
+                              background: rgba(0, 0, 0, 0.4);
+                    }
+
+                    #skillsContainer {
+                              position: absolute;
+                              height: 70%;
+                              width: 90%;
+                              top: 28%;
+                              left: 5%;
+                              background: rgba(0, 0, 0, 0.3);
+                              border-radius: 5px;
+                              overflow: hidden;
+                              z-index: 100;
+
+                              #theGeneralSkillsContainer {
+                                        position: absolute;
+                                        height: 100%;
+                                        width: 100%;
+                                        top: 0%;
+                                        left: 0%;
+                                        z-index: 100;
+                                        overflow: hidden;
+
+                                        #theDesignContainer {
+                                                  position: absolute;
+                                                  height: 25%;
+                                                  width: 100%;
+                                                  top: 2%;
+                                                  left: 0%;
+
+                                                  #designIcon {
+                                                            position: absolute;
+                                                            height: 40%;
+                                                            top: 37%;
+                                                            left: 80%;
+                                                  }
+
+                                                            #designHeading {
+                                                                      position: absolute;
+                                                                      width: 100%;
+                                                                      top: -15%;
+                                                                      left: 5%;
+                                                                      text-align: left;
+                                                                      padding-left: 5%;
+                                                                      font-size: 1.2rem;
+                                                            }
+
+                                                                      #designPar {
+                                                                                position: absolute;
+                                                                                height: 80%;
+                                                                                width: 70%;
+                                                                                top: 8%;
+                                                                                left: 5%;
+                                                                                font-size: 0.85rem;
+                                                                      }
+                                        }
+
+                                        #theDevelopmentContainer {
+                                                  position: absolute;
+                                                  height: 25%;
+                                                  width: 100%;
+                                                  top: 29%;
+                                                  left: 0%;
+
+                                                  #developmentIcon {
+                                                            position: absolute;
+                                                            height: 40%;
+                                                            top: 21%;
+                                                            left: 80%;
+                                                  }
+
+                                                            #developmentHeading {
+                                                                      position: absolute;
+                                                                      width: 100%;
+                                                                      top: -15%;
+                                                                      left: 5%;
+                                                                      text-align: left;
+                                                                      padding-left: 5%;
+                                                                      font-size: 1.2rem;
+                                                            }
+
+                                                                      #developmentPar {
+                                                                                position: absolute;
+                                                                                height: 80%;
+                                                                                width: 70%;
+                                                                                top: 8%;
+                                                                                left: 5%;
+                                                                                font-size: 0.85rem;
+                                                                      }
+                                        }
+
+                                        #theBrandingContainer {
+                                                  position: absolute;
+                                                  height: 25%;
+                                                  width: 100%;
+                                                  top: 58%;
+                                                  left: 0%;
+
+                                                  #brandingIcon {
+                                                            position: absolute;
+                                                            height: 40%;
+                                                            top: 2%;
+                                                            left: 80%;
+                                                  }
+
+                                                            #brandingHeading {
+                                                                      position: absolute;
+                                                                      width: 100%;
+                                                                      top: -15%;
+                                                                      left: 5%;
+                                                                      text-align: left;
+                                                                      padding-left: 5%;
+                                                                      font-size: 1.2rem;
+                                                            }
+
+                                                                      #brandingPar {
+                                                                                position: absolute;
+                                                                                height: 80%;
+                                                                                width: 70%;
+                                                                                top: 8%;
+                                                                                left: 5%;
+                                                                                font-size: 0.85rem;
+                                                                      }
+                                        }
+
+                                        #theWordpressContainer {
+                                                  position: absolute;
+                                                  height: 25%;
+                                                  width: 100%;
+                                                  top: 78%;
+                                                  left: 0%;
+
+                                                  #wordpressIcon {
+                                                            position: absolute;
+                                                            height: 40%;
+                                                            top: 17%;
+                                                            left: 80%;
+                                                  }
+
+                                                            #wordpressHeading {
+                                                                      position: absolute;
+                                                                      width: 100%;
+                                                                      top: -15%;
+                                                                      left: 5%;
+                                                                      text-align: left;
+                                                                      padding-left: 5%;
+                                                                      font-size: 1.2rem;
+                                                            }
+
+                                                                      #wordpressPar {
+                                                                                position: absolute;
+                                                                                height: 80%;
+                                                                                width: 70%;
+                                                                                top: 8%;
+                                                                                left: 5%;
+                                                                                font-size: 0.85rem;
+                                                                      }
+                                        }
+                              }
+
+                              #theGeneralSkillsContainer.generalskills {
+                                        left: 0%;
+                                        transition: 0.5s;
+                              }
+
+                              #theGeneralSkillsContainer.specificskills {
+                                        left: -110%;
+                                        transition: 0.5s;
+                              }
+
+                              #theSpecificSkillsContainer {
+                                        position: absolute;
+                                        height: 100%;
+                                        width: 100%;
+                                        top: 0%;
+                                        left: 0%;
+                                        z-index: 100;
+                                        overflow: hidden;
+
+                                        #theFrontEndButton {
+                                                  position: absolute;
+                                                  height: 9%;
+                                                  width: 50%;
+                                                  top: 0%;
+                                                  left: 0%;
+                                                  text-align: center;
+                                                  font-size: 1.2rem;
+                                                  text-shadow: 0.5px 0.5px 1px white;
+                                                  padding-top: 1.4%;
+                                        }
+
+                                        #theBackEndButton {
+                                                  position: absolute;
+                                                  height: 9%;
+                                                  width: 50%;
+                                                  top: 0%;
+                                                  left: 50%;
+                                                  text-align: center;
+                                                  font-size: 1.2rem;
+                                                  text-shadow: 0.5px 0.5px 1px white;
+                                                  padding-top: 1.4%;
+                                        }
+
+                                        #frontBackEndSwitchUnderline {
+                                                  position: absolute;
+                                                  height: 0.08%;
+                                                  width: 50%;
+                                                  top: 9%;
+                                                  left: 0%;
+                                                  background: orangered;
+                                                  border: 1px solid orangered;
+                                        }
+
+                                                  #frontBackEndSwitchUnderline.frontend {
+                                                            left: 0%;
+                                                            transition: 0.5s;
+                                                  }
+
+                                                  #frontBackEndSwitchUnderline.backend {
+                                                            left: 50%;
+                                                            transition: 0.5s;
+                                                  }
+
+                                        #theFrontEndDiv {
+                                                  position: absolute;
+                                                  height: 90%;
+                                                  width: 100%;
+                                                  top: 10%;
+                                                  left: 0%;
+
+                                                  #htmlDiv {
+                                                            position: absolute;
+                                                            height: 12.5%;
+                                                            width: 100%;
+                                                            top: 0%;
+                                                            left: 0%;
+                                                  }
+
+                                                  #sassDiv {
+                                                            position: absolute;
+                                                            height: 12.5%;
+                                                            width: 100%;
+                                                            top: 12.5%;
+                                                            left: 0%;
+                                                  }
+
+                                                  #javascriptDiv {
+                                                            position: absolute;
+                                                            height: 12.5%;
+                                                            width: 100%;
+                                                            top: 25%;
+                                                            left: 0%;
+                                                  }
+
+                                                  #jqueryDiv {
+                                                            position: absolute;
+                                                            height: 12.5%;
+                                                            width: 100%;
+                                                            top: 37.5%;
+                                                            left: 0%;
+                                                  }
+
+                                                  #bootstrapDiv {
+                                                            position: absolute;
+                                                            height: 12.5%;
+                                                            width: 100%;
+                                                            top: 50%;
+                                                            left: 0%;
+                                                  }
+
+                                                  #angularDiv {
+                                                            position: absolute;
+                                                            height: 12.5%;
+                                                            width: 100%;
+                                                            top: 62.5%;
+                                                            left: 0%;
+                                                  }
+
+                                                  #vueDiv {
+                                                            position: absolute;
+                                                            height: 12.5%;
+                                                            width: 100%;
+                                                            top: 75%;
+                                                            left: 0%;
+                                                  }
+
+                                                  #reactDiv {
+                                                            position: absolute;
+                                                            height: 12.5%;
+                                                            width: 100%;
+                                                            top: 87.5%;
+                                                            left: 0%;
+                                                  }
+                                        }
+
+                                        #theFrontEndDiv.frontend {
+                                                  left: 0%;
+                                                  transition: 0.5s;
+                                        }
+
+                                        #theFrontEndDiv.backend {
+                                                  left: -110%;
+                                                  transition: 0.5s;
+                                        }
+
+                                        #theBackEndDiv {
+                                                  position: absolute;
+                                                  height: 90%;
+                                                  width: 100%;
+                                                  top: 10%;
+                                                  left: 0%;
+
+                                                  #wordpressDiv {
+                                                            position: absolute;
+                                                            height: 16.7%;
+                                                            width: 100%;
+                                                            top: 0%;
+                                                            left: 0%;
+                                                  }
+
+                                                  #phpDiv {
+                                                            position: absolute;
+                                                            height: 16.7%;
+                                                            width: 100%;
+                                                            top: 16.7%;
+                                                            left: 0%;
+                                                  }
+
+                                                  #nodejsDiv {
+                                                            position: absolute;
+                                                            height: 16.7%;
+                                                            width: 100%;
+                                                            top: 33.4%;
+                                                            left: 0%;
+                                                  }
+
+                                                  #mysqlDiv {
+                                                            position: absolute;
+                                                            height: 16.7%;
+                                                            width: 100%;
+                                                            top: 50.1%;
+                                                            left: 0%;
+                                                  }
+
+                                                  #jsonDiv {
+                                                            position: absolute;
+                                                            height: 16.7%;
+                                                            width: 100%;
+                                                            top: 66.8%;
+                                                            left: 0%;
+                                                  }
+
+                                                  #githubDiv {
+                                                            position: absolute;
+                                                            height: 16.7%;
+                                                            width: 100%;
+                                                            top: 83.5%;
+                                                            left: 0%;
+                                                  }
+                                        }
+
+                                        #theBackEndDiv.frontend {
+                                                  left: 110%;
+                                                  transition: 0.5s;
+                                        }
+
+                                        #theBackEndDiv.backend {
+                                                  left: 0%;
+                                                  transition: 0.5s;
+                                        }
+
+                                        .frontEndSkillTitles {
+                                                  position: absolute;
+                                                  height: 50%;
+                                                  width: 100%;
+                                                  top: -47%;
+                                                  left: 0%;
+                                                  text-align: left;
+                                                  padding-left: 5%;
+                                                  font-size: rem;
+                                        }
+
+                                        .frontEndSkillDescriptions {
+                                                  position: absolute;
+                                                  height: 50%;
+                                                  width: 95%;
+                                                  top: -37%;
+                                                  left: 0%;
+                                                  text-align: right;
+                                                  padding-right: 30%;
+                                                  font-size: 1.1rem;
+                                        }
+
+                                        .backEndSkillTitles {
+                                                  position: absolute;
+                                                  height: 50%;
+                                                  width: 100%;
+                                                  top: -34%;
+                                                  left: 0%;
+                                                  text-align: left;
+                                                  padding-left: 5%;
+                                                  font-size: rem;
+                                        }
+
+                                        .backEndSkillDescriptions {
+                                                  position: absolute;
+                                                  height: 50%;
+                                                  width: 95%;
+                                                  top: -25%;
+                                                  left: 0%;
+                                                  text-align: right;
+                                                  padding-right: 30%;
+                                                  font-size: 1.1rem;
+                                        }
+
+                                        .gageLevelBorders {
+                                                  position: absolute;
+                                                  height: 15%;
+                                                  width: 70%;
+                                                  top: 60%;
+                                                  left: 15%;
+                                                  border: 1px solid teal;
+                                                  border-radius: 10px;
+
+                                                  #htmlLevelGage {
+                                                            position: absolute;
+                                                            height: 70%;
+                                                            width: 90%;
+                                                            top: 15%;
+                                                            left: 1%;
+                                                            background: teal;
+                                                            border-radius: 10px;
+                                                  }
+
+                                                  #sassLevelGage {
+                                                            position: absolute;
+                                                            height: 70%;
+                                                            width: 65%;
+                                                            top: 15%;
+                                                            left: 1%;
+                                                            background: teal;
+                                                            border-radius: 10px;
+                                                  }
+
+                                                  #javascriptLevelGage {
+                                                            position: absolute;
+                                                            height: 70%;
+                                                            width: 65%;
+                                                            top: 15%;
+                                                            left: 1%;
+                                                            background: teal;
+                                                            border-radius: 10px;
+                                                  }
+
+                                                  #jqueryLevelGage {
+                                                            position: absolute;
+                                                            height: 70%;
+                                                            width: 50%;
+                                                            top: 15%;
+                                                            left: 1%;
+                                                            background: teal;
+                                                            border-radius: 10px;
+                                                  }
+
+                                                  #bootstrapLevelGage {
+                                                            position: absolute;
+                                                            height: 70%;
+                                                            width: 75%;
+                                                            top: 15%;
+                                                            left: 1%;
+                                                            background: teal;
+                                                            border-radius: 10px;
+                                                  }
+
+                                                  #angularLevelGage {
+                                                            position: absolute;
+                                                            height: 70%;
+                                                            width: 65%;
+                                                            top: 15%;
+                                                            left: 1%;
+                                                            background: teal;
+                                                            border-radius: 10px;
+                                                  }
+
+                                                  #vueLevelGage {
+                                                            position: absolute;
+                                                            height: 70%;
+                                                            width: 65%;
+                                                            top: 15%;
+                                                            left: 1%;
+                                                            background: teal;
+                                                            border-radius: 10px;
+                                                  }
+
+                                                  #reactLevelGage {
+                                                            position: absolute;
+                                                            height: 70%;
+                                                            width: 50%;
+                                                            top: 15%;
+                                                            left: 1%;
+                                                            background: teal;
+                                                            border-radius: 10px;
+                                                  }
+
+                                                  #wordpressLevelGage {
+                                                            position: absolute;
+                                                            height: 70%;
+                                                            width: 50%;
+                                                            top: 17%;
+                                                            left: 1%;
+                                                            background: teal;
+                                                            border-radius: 10px;
+                                                  }
+
+                                                  #phpLevelGage {
+                                                            position: absolute;
+                                                            height: 70%;
+                                                            width: 50%;
+                                                            top: 15%;
+                                                            left: 1%;
+                                                            background: teal;
+                                                            border-radius: 10px;
+                                                  }
+
+                                                  #nodejsLevelGage {
+                                                            position: absolute;
+                                                            height: 70%;
+                                                            width: 25%;
+                                                            top: 15%;
+                                                            left: 1%;
+                                                            background: teal;
+                                                            border-radius: 10px;
+                                                  }
+
+                                                  #mysqlLevelGage {
+                                                            position: absolute;
+                                                            height: 70%;
+                                                            width: 75%;
+                                                            top: 15%;
+                                                            left: 1%;
+                                                            background: teal;
+                                                            border-radius: 10px;
+                                                  }
+
+                                                  #jsonLevelGage {
+                                                            position: absolute;
+                                                            height: 70%;
+                                                            width: 85%;
+                                                            top: 15%;
+                                                            left: 1%;
+                                                            background: teal;
+                                                            border-radius: 10px;
+                                                  }
+
+                                                  #githubLevelGage {
+                                                            position: absolute;
+                                                            height: 70%;
+                                                            width: 85%;
+                                                            top: 15%;
+                                                            left: 1%;
+                                                            background: teal;
+                                                            border-radius: 10px;
+                                                  }
+
+                                                            .levelGages {
+
+                                                            }
+                                        }
+                              }
+
+                              #theSpecificSkillsContainer.generalskills {
+                                        left: 110%;
+                                        transition: 0.5s;
+                              }
+
+                              #theSpecificSkillsContainer.specificskills {
+                                        left: 0%;
+                                        transition: 0.5s;                    
+                              }
+                    }
+          }
+
+          #overallSkillsDiv.open {
+                    transform: rotateY(0deg);
+                    transition: 0.3s;
+                    transition-delay: 2.5s;
+          }
+
+          #overallSkillsDiv.closed {
+                    transform: rotateY(-90deg);
+                    transition: 0.3s;
+                    transition-delay: 0s;
+          }
+}

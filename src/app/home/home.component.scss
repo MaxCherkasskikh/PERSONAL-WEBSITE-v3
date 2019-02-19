@@ -1,0 +1,195 @@
+#homeContainer {
+          position: absolute;
+          height: 170%;
+          width: 100%;
+          top: 0%;
+          left: 0%;
+
+          #mainHeaderBackgroundDiv {
+                    position: absolute;
+                    height: 40%;
+                    width: 100%;
+                    top: 0%;
+                    left: 0%;
+                    background: url(src/assets/img/deer.gif);
+                    background-attachment: fixed;
+                    background-size: 140% 70%;
+                    background-position: 40% 0%;
+                    background-repeat: no-repeat;
+                    -webkit-filter: blur(2px);
+          }
+
+          #mainHeadingContainer {
+                    position: absolute;
+                    height: 40%;
+                    width: 100%;
+                    top: 3.5%;
+                    left: 0%;
+                    z-index: 990;
+
+                    #homeHeaderHeading {
+                              position: absolute;
+                              height: 10%;
+                              width: 100%;
+                              top: 5%;
+                              text-align: center;
+                              font-size: 2rem;
+                              text-shadow: 1px 1px 2px white;
+                    }
+
+                    #homeAboutPar {
+                              position: absolute;
+                              height: 15%;
+                              width: 100%;
+                              top: 30%;
+                              text-align: center;
+                              font-size: 1.4rem;
+                    }
+
+                              #efficiencyText {
+                                        position: absolute;
+                                        height: 5%;
+                                        width: 33%;
+                                        top: 60%;
+                                        left: 0%;
+                                        font-size: 1.4rem;
+                                        text-align: center;
+                              }
+
+                              #simplicityText {
+                                        position: absolute;
+                                        height: 5%;
+                                        width: 33%;
+                                        top: 60%;
+                                        left: 33%;
+                                        font-size: 1.4rem;
+                                        text-align: center;
+                              }
+
+                              #elegenceText {
+                                        position: absolute;
+                                        height: 5%;
+                                        width: 33%;
+                                        top: 60%;
+                                        left: 66%;
+                                        font-size: 1.4rem;
+                                        text-align: center;
+                              }
+
+                                        #learnMoreButton {
+                                                  position: absolute;
+                                                  height: 9%;
+                                                  width: 40%;
+                                                  top: 90%;
+                                                  left: 5%;
+                                                  font-size: 1.5rem;
+                                                  text-align: center;
+                                                  background: rgba(0, 0, 0, 0.7);
+                                                  border: 1px solid teal;
+                                                  border-radius: 5px;
+                                                  color: teal;
+                                                  z-index: 990;
+                                        }
+
+                                        #needWebsiteButton {
+                                                  position: absolute;
+                                                  height: 9%;
+                                                  width: 40%;
+                                                  top: 90%;
+                                                  left: 55%;
+                                                  font-size: 1.5rem;
+                                                  text-align: center;
+                                                  background: rgba(0, 0, 0, 0.7);
+                                                  border: 1px solid teal;
+                                                  border-radius: 5px;
+                                                  color: teal;
+                                                  z-index: 990;
+                                        }
+          }
+
+          #homeTransitionDiv {
+                    position: absolute;
+                    height: 30%;
+                    width: 100%;
+                    top: 26%;
+                    background: linear-gradient(to bottom, transparent, rgba(24, 24, 24, 0.1), rgba(24, 24, 24, 0.2), rgba(24, 24, 24, 0.3), rgba(24, 24, 24, 0.4), rgba(24, 24, 24, 0.5), rgba(24, 24, 24, 0.6), rgba(24, 24, 24, 0.7), rgba(24, 24, 24, 0.8), rgba(24, 24, 24, 0.9), rgb(24, 24, 24), rgb(24, 24, 24), rgb(24, 24, 24), rgb(24, 24, 24), rgb(24, 24, 24), rgb(24, 24, 24), rgb(24, 24, 24), rgb(24, 24, 24), rgb(24, 24, 24), rgb(24, 24, 24), rgb(24, 24, 24), rgb(24, 24, 24), rgb(24, 24, 24), rgb(24, 24, 24), rgb(24, 24, 24));
+                    z-index: 100;
+          }
+
+          #secondaryHeadingContainer {
+                    position: absolute;
+                    height: 55%;
+                    width: 100%;
+                    top: 45%;
+                    background: rgb(24, 24, 24);
+                    z-index: 101;
+
+                    #greatDevHeading {
+                              position: absolute;
+                              height: 5%;
+                              width: 100%;
+                              top: 1%;
+                              font-size: 2rem;
+                              text-align: center;
+                    }
+
+                              #greatDevPar {
+                                        position: absolute;
+                                        height: 8%;
+                                        width: 80%;
+                                        top: 15%;
+                                        left: 10%;
+                                        margin: 0 auto;
+                                        text-align: center;
+                                        font-size: 1.1rem;
+                              }
+
+                    #myMissionHeading {
+                              position: absolute;
+                              height: 6%;
+                              width: 100%;
+                              top: 24%;
+                              text-align: center;
+                              font-size: 2rem;
+                    }
+
+                              #myMissionPar {
+                                        position: absolute;
+                                        height: 35%;
+                                        width: 84%;
+                                        top: 37%;
+                                        left: 8%;
+                                        font-size: 1.1rem;
+                              }
+
+                    #myStoryButton {
+                              position: absolute;
+                              height: 6%;
+                              width: 40%;
+                              top: 87%;
+                              left: 30%;
+                              font-size: 1.5rem;
+                              text-align: center;
+                              background: rgba(0, 0, 0, 0.7);
+                              border: 1px solid teal;
+                              border-radius: 5px;
+                              color: teal;
+                              z-index: 1000;
+                    }
+          }
+}
+
+#mainHeadingContainer.open {
+          transform: rotateY(0deg);
+          transform-origin: center;
+          transition: 0.3s;
+          transition-delay: 2.5s;
+          z-index: 1000;
+}
+
+#mainHeadingContainer.closed {
+          transform: rotateY(90deg);
+          transform-origin: center;
+          transition: 0.3s;
+          z-index: 0;
+}

@@ -1,0 +1,344 @@
+#myServicesContainer {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          top: 0%;
+          left: 0%;
+          background: rgb(24, 24, 24);
+          overflow: hidden;
+
+          #bearBackgroundDiv {
+                    position: absolute;
+                    height: 40%;
+                    width: 100%;
+                    top: 6%;
+                    background: url(src/assets/img/bear.gif);
+                    background-attachment: fixed;
+                    background-size: 120% 55%;
+                    background-position: 50% -10%;
+                    background-repeat: no-repeat;
+                    -webkit-filter: blur(1px);
+                    z-index: 0;
+          }
+
+          #bearBackgroundDivCover {
+                    position: absolute;
+                    height: 42%;
+                    width: 100%;
+                    top: 5%;
+                    background: linear-gradient(rgb(24, 24, 24), transparent, rgba(24, 24, 24, 0.5), rgba(24, 24, 24, 0.7), rgba(24, 24, 24, 0.8), rgba(24, 24, 24, 0.9), rgb(24, 24, 24));
+                    z-index: 1;
+          }
+
+          #myServicesDiv {
+                    position: absolute;
+                    height: 90%;
+                    width: 90%;
+                    top: 7%;
+                    left: 5%;
+                    z-index: 100;
+
+                    #myServicesMainHeading {
+                              position: absolute;
+                              width: 100%;
+                              top: -5%;
+                              text-align: center;
+                              font-size: 2rem;
+                    }
+
+                    #myServicesMainPar {
+                              position: absolute;
+                              width: 100%;
+                              top: 4%;
+                              left: 0%;
+                              text-align: left;
+                              padding-left: 1%;
+                              font-size: 1.2rem;
+                    }
+
+                    #servicesInformationDiv {
+                              position: absolute;
+                              height: 60%;
+                              width: 100%;
+                              top: 40%;
+                              left: 0%;
+
+                              #servicesFrontEndButton {
+                                        position: absolute;
+                                        height: 9.5%;
+                                        width: 50%;
+                                        top: 0%;
+                                        left: 0%;
+                                        font-size: 1.2rem;
+                                        text-align: center;
+                              }
+
+                              #servicesBackEndButton {
+                                        position: absolute;
+                                        height: 9.5%;
+                                        width: 50%;
+                                        top: 0%;
+                                        left: 50%;
+                                        font-size: 1.2rem;
+                                        text-align: center;
+                              }
+
+                              #servicesButtonsUnderline {
+                                        position: absolute;
+                                        height: 0.04%;
+                                        width: 50%;
+                                        top: 10%;
+                                        left: 0%;
+                                        border: 1px solid teal;
+                              }
+
+                              #servicesButtonsUnderline.servicesfrontend {
+                                        left: 0%;
+                                        transition: 0.5s;
+                              }
+
+                              #servicesButtonsUnderline.servicesbackend {
+                                        left: 50%;
+                                        transition: 0.5s;                                        
+                              }
+
+                              #servicesFrontEndDiv {
+                                        position: absolute;
+                                        height: 89%;
+                                        width: 100%;
+                                        top: 11%;
+                                        left: 0%;
+
+                                        #servicesWebDesignDiv {
+                                                  position: absolute;
+                                                  height: 45%;
+                                                  width: 50%;
+                                                  top: 0%;
+                                                  left: 0%;
+
+                                                  #servicesWebDesignHeading {
+                                                            position: absolute;
+                                                            height: 20%;
+                                                            width: 100%;
+                                                            top: -10%;
+                                                            left: 0%;
+                                                            text-align: center;
+                                                            font-size: 1.1rem;
+                                                  }
+
+                                                            #servicesWebDesignIcon {
+                                                                      position: absolute;
+                                                                      height: 30%;
+                                                                      top: 25%;
+                                                                      left: 37%;
+                                                            }
+
+                                                                      #servicesWebDesignPar {
+                                                                                position: absolute;
+                                                                                height: 48%;
+                                                                                width: 92%;
+                                                                                top: 50%;
+                                                                                left: 2%;
+                                                                                padding-left: 2%;
+                                                                                padding-right: 2%;
+                                                                                font-size: 0.85rem;
+                                                                                text-align: center;
+                                                                      }
+                                        }
+
+                                        #servicesWebDevelopmentDiv {
+                                                  position: absolute;
+                                                  height: 45%;
+                                                  width: 50%;
+                                                  top: 0%;
+                                                  left: 50%;
+
+                                                  #servicesWebDevelopmentHeading {
+                                                            position: absolute;
+                                                            height: 20%;
+                                                            width: 100%;
+                                                            top: -10%;
+                                                            left: 0%;
+                                                            text-align: center;
+                                                            font-size: 1.1rem;
+                                                  }
+
+                                                            #servicesWebDevelopmentIcon {
+                                                                      position: absolute;
+                                                                      height: 30%;
+                                                                      top: 25%;
+                                                                      left: 37%;
+                                                            }
+
+                                                                      #servicesWebDevelopmentPar {
+                                                                                position: absolute;
+                                                                                height: 48%;
+                                                                                width: 92%;
+                                                                                top: 50%;
+                                                                                left: 2%;
+                                                                                padding-left: 2%;
+                                                                                padding-right: 2%;
+                                                                                font-size: 0.85rem;
+                                                                                text-align: center;
+                                                                      }          
+                                        }
+
+                                        #servicesBrandingDiv {
+                                                  position: absolute;
+                                                  height: 45%;
+                                                  width: 50%;
+                                                  top: 50%;
+                                                  left: 0%;
+
+                                                  #servicesBrandingHeading {
+                                                            position: absolute;
+                                                            height: 20%;
+                                                            width: 100%;
+                                                            top: -10%;
+                                                            left: 0%;
+                                                            text-align: center;
+                                                            font-size: 1.1rem;
+                                                  }
+
+                                                            #servicesBrandingIcon {
+                                                                      position: absolute;
+                                                                      height: 30%;
+                                                                      top: 25%;
+                                                                      left: 37%;
+                                                            }
+
+                                                                      #servicesBrandingPar {
+                                                                                position: absolute;
+                                                                                height: 48%;
+                                                                                width: 92%;
+                                                                                top: 50%;
+                                                                                left: 2%;
+                                                                                padding-left: 2%;
+                                                                                padding-right: 2%;
+                                                                                font-size: 0.85rem;
+                                                                                text-align: center;
+                                                                      }          
+                                        }
+
+                                        #servicesWordpressDiv {
+                                                  position: absolute;
+                                                  height: 45%;
+                                                  width: 50%;
+                                                  top: 50%;
+                                                  left: 50%;
+
+                                                  #servicesWordpressHeading {
+                                                            position: absolute;
+                                                            height: 20%;
+                                                            width: 100%;
+                                                            top: -10%;
+                                                            left: 0%;
+                                                            text-align: center;
+                                                            font-size: 1.1rem;
+                                                  }
+
+                                                            #servicesWordpressIcon {
+                                                                      position: absolute;
+                                                                      height: 30%;
+                                                                      top: 25%;
+                                                                      left: 37%;
+                                                            }
+
+                                                                      #servicesWordpressPar {
+                                                                                position: absolute;
+                                                                                height: 48%;
+                                                                                width: 92%;
+                                                                                top: 50%;
+                                                                                left: 2%;
+                                                                                padding-left: 2%;
+                                                                                padding-right: 2%;
+                                                                                font-size: 0.85rem;
+                                                                                text-align: center;
+                                                                      }          
+                                        }
+                              }
+
+                              #servicesFrontEndDiv.servicesfrontend {
+                                        left: 0%;
+                                        transition: 0.5s;
+                              }
+
+                              #servicesFrontEndDiv.servicesbackend {
+                                        left: -110%;
+                                        transition: 0.5s;                                        
+                              }
+
+                              #servicesBackEndDiv {
+                                        position: absolute;
+                                        height: 89%;
+                                        width: 100%;
+                                        top: 11%;
+                                        left: 110%;
+
+                                        #servicesBackEndParsDiv {
+                                                  position: absolute;
+                                                  height: 83%;
+                                                  width: 100%;
+                                                  top: 0%;
+                                                  left: 0%;
+                                                  overflow-y: scroll;
+
+                                                  #servicesBackEndMainPar {
+                                                            position: absolute;
+                                                            height: 130%;
+                                                            width: 96%;
+                                                            top: -7%;
+                                                            left: 0%;
+                                                            padding-left: 3%;
+                                                            padding-right: 3%;
+                                                  }
+
+                                                  #servicesBackEndSecondaryPar {
+                                                            position: absolute;
+                                                            height: 40%;
+                                                            width: 96%;
+                                                            top: 125%;
+                                                            left: 0%;
+                                                            padding-left: 3%;
+                                                            padding-right: 3%;
+                                                  }
+                                        }
+
+                                        #servicesToContactButton {
+                                                  position: absolute;
+                                                  height: 13%;
+                                                  width: 40%;
+                                                  top: 85%;
+                                                  left: 58%;
+                                                  font-size: 1.7rem;
+                                                  text-align: center;
+                                                  border: 1px solid teal;
+                                                  border-radius: 5px;
+                                                  color: teal
+                                        }
+                              }
+
+                              #servicesBackEndDiv.servicesfrontend {
+                                        left: 110%;
+                                        transition: 0.5s;
+                              }
+
+                              #servicesBackEndDiv.servicesbackend {
+                                        left: 0%;
+                                        transition: 0.5s;                                        
+                              }
+                    }
+          }
+
+          #myServicesDiv.open {
+                    transform: rotateY(0deg);
+                    transition: 0.3s;
+                    transition-delay: 2.5s;
+          }
+
+          #myServicesDiv.closed {
+                    transform: rotateY(-90deg);
+                    transition: 0.3s;
+                    transition-delay: 0s;
+          }
+}

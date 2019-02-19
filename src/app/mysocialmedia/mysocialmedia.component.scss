@@ -1,0 +1,197 @@
+#findMeContainer {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          top: 0%;
+          left: 0%;
+          background: rgb(24, 24, 24);
+          overflow: hidden;
+
+          #electricityBackgroundDiv {
+                    position: absolute;
+                    height: 40%;
+                    width: 100%;
+                    top: 6%;
+                    background: url(src/assets/img/electricity.gif);
+                    background-attachment: fixed;
+                    background-size: 180% 60%;
+                    background-position: 65% -15%;
+                    background-repeat: no-repeat;
+                    -webkit-filter: blur(1px);
+                    z-index: 0;
+          }
+
+          #electricityBackgroundDivCover {
+                    position: absolute;
+                    height: 42%;
+                    width: 100%;
+                    top: 5%;
+                    background: linear-gradient(rgb(24, 24, 24), transparent, rgba(24, 24, 24, 0.5), rgba(24, 24, 24, 0.7), rgba(24, 24, 24, 0.8), rgba(24, 24, 24, 0.9), rgb(24, 24, 24));
+                    z-index: 1;
+          }
+
+          #findMeInfoDiv {
+                    position: absolute;
+                    height: 90%;
+                    width: 90%;
+                    top: 7%;
+                    left: 5%;
+                    z-index: 100;
+
+                    #findMeMainHeading {
+                              position: absolute;
+                              width: 100%;
+                              top: -5%;
+                              text-align: center;
+                              font-size: 2rem;
+                    }
+
+                    #socialMediaDiv {
+                              position: absolute;
+                              height: 30%;
+                              width: 100%;
+                              top: 30%;
+                              left: 0%;
+                              z-index: 1;
+
+                              #mySocialMediaHeading {
+                                        position: absolute;
+                                        width: 100%;
+                                        top: 5%;
+                                        left: 0%;
+                                        text-align: center;
+                              }
+
+                              #facebookIcon {
+                                        position: absolute;
+                                        height: 35%;
+                                        top: 50%;
+                                        left: 5%;
+                              }
+
+                              #twitterIcon {
+                                        position: absolute;
+                                        height: 35%;
+                                        top: 50%;
+                                        left: 28.66%;
+                              }
+
+                              #instagramIcon {
+                                        position: absolute;
+                                        height: 35%;
+                                        top: 50%;
+                                        left: 52.34%;
+                              }
+
+                              #pinterestIcon {
+                                        position: absolute;
+                                        height: 35%;
+                                        top: 50%;
+                                        left: 76%;
+                              }
+                    }
+
+                    #contactInfoDiv {
+                              position: absolute;
+                              height: 40%;
+                              width: 100%;
+                              top: 60%;
+                              left: 0%;
+
+                              #myContactHeading {
+                                        position: absolute;
+                                        width: 100%;
+                                        top: -12%;
+                                        left: 0%;
+                                        text-align: center;
+                              }
+
+                              #mapBackgroundDiv {
+                                        position: absolute;
+                                        height: 70%;
+                                        width: 45%;
+                                        top: 8%;
+                                        left: 3%;
+                                        background: black;
+                                        -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+                                        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+                              
+                                        #mapBackground {
+                                                  position: absolute;
+                                                  height: 230%;
+                                                  top: 0%;
+                                                  left: -170%;
+                                        }
+                              }
+
+                              #mapBackgroundBorder {
+                                        position: absolute;
+                                        height: 75%;
+                                        width: 48%;
+                                        top: 5.5%;
+                                        left: 1.5%;
+                                        background: teal;
+                                        -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%, 50% 0, 50% 1.5%, 1.5% 26%, 1.5% 74%, 50% 98.5%, 98.5% 74%, 98.5% 26%, 50% 1.5%);
+                                        clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%, 50% 0, 50% 1.5%, 1.5% 26%, 1.5% 74%, 50% 98.5%, 98.5% 74%, 98.5% 26%, 50% 1.5%);
+                                        z-index: 1;
+                              }
+                              
+                              #phoneIcon {
+                                        position: absolute;
+                                        height: 15%;
+                                        top: 24%;
+                                        left: 55%;
+                                        z-index: 10;
+                              }
+
+                                        #phoneNumber {
+                                                  position: absolute;
+                                                  top: 16.5%;
+                                                  left: 70%;
+                                                  font-size: 1.2rem;
+                                        }
+
+                              #addressIcon {
+                                        position: absolute;
+                                        height: 15%;
+                                        top: 48%;
+                                        left: 55%;
+                                        z-index: 10;
+                              }
+
+                                        #generalAddress {
+                                                  position: absolute;
+                                                  top: 40.6%;
+                                                  left: 70%;
+                                                  font-size: 1.2rem;
+                                        }
+
+                              #emailIcon {
+                                        position: absolute;
+                                        height: 15%;
+                                        top: 72%;
+                                        left: 42.5%;
+                                        z-index: 10;
+                              }
+
+                                        #myEmail {
+                                                  position: absolute;
+                                                  top: 64.5%;
+                                                  left: 58%;
+                                                  font-size: 1.2rem;
+                                        }
+                    }
+          }
+
+          #findMeInfoDiv.open {
+                    transform: rotateY(0deg);
+                    transition: 0.3s;
+                    transition-delay: 2.5s;
+          }
+
+          #findMeInfoDiv.closed {
+                    transform: rotateY(-90deg);
+                    transition: 0.3s;
+                    transition-delay: 0s;
+          }
+}
